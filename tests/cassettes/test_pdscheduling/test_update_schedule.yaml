@@ -1,0 +1,621 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/vnd.pagerduty+json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Token token=REMOVED
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+      content-type:
+      - application/json
+    method: GET
+    uri: https://api.pagerduty.com/schedules?limit=100&query=
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKk7OSE0pzUktVrKKjtVRysnMzSxRsjI0MNBRyk9LK04FcoDMkvySxBwlq7zS
+        nBwdpdz8olQlq7TEnOLUWgDv1kDFQQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ''
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '82'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Jun 2021 20:16:58 GMT
+      ETag:
+      - W/"fefe95e6f6abcef5260b8270a632e2d1"
+      Feature-Policy:
+      - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
+        magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - 65105eaa-c77e-472a-86b3-e3bf0ced62cb
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/vnd.pagerduty+json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Token token=REMOVED
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+      content-type:
+      - application/json
+    method: GET
+    uri: https://api.pagerduty.com/users?include%5B%5D=teams&limit=100
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA82XUW+bSBDHv4rFwz1ZBgwYsFRd0yY5u0kr99rUdaoTWmDW3ivsWsviKBflu98Q
+        HCChtbDVWnmxDMvO/mf2NzO7d1qegcy08bc7jZMUtLF2zqha9a7wtdbXICUswZdsQ/h3/EnEZmD6
+        nvF6WQwMIpHiR4qlEPwneDH7JGNEnwi+DC7wBwcjkQiJAxJifCIboogMclkYXSm1zsa6nkGUSxgs
+        ZTlaWNXLv7pDfM90YjcM7cikVhhZNPKNkU8ji3jEDQdrvvwzfpWmf8hXs79wgZAlCa40VjKHviZF
+        UogqfMSxGLJIsrVigmtjnidJX2N8wxQp3gQZcKWNKUkynPivCAPFVDG7/FABSYsw/VN4xBWJVJCC
+        Wom4jB3DJbXZh1P/63xRROR2Xaz7EL3g6feBBAoSeAT4XZanKZG3+OkpUJInqngHCW0Eh6zZYE2W
+        IONc3T6E5mHH9Nn0/WR+OtWfqdFrESuVJmWkCxfuUTkXilEWlf7KPIGm+MvFpXtm1uJJlrElTzEq
+        QWveT5wweinjuYJs3ItWhHNIerWcPf1qrYkuVxKfuda/08oNGL59636evGgfKont7Sl9KPe19mEL
+        b43KkwTdL6potV62yj/cMIWYkSgSOVe7aNPuMdSPdULIH9eJwbZQ7KwTZ7kUa9DnRGbkBmU9loml
+        BOD4vG+hsE2DWn5oh0PfBCe0TZsSN46dGGIIiWe8rELhWpfziVfv8W8tFOcf53PzS7tQVCLaJLaT
+        ryx9JaGlwV2ENtHoSmhl9UBCt/MbhE6xafUuyq6Fan/Qy7ogesFg0wB0ncs1toX9CfXi2HVMjw5p
+        5PgjH7yhN/LAsKhrxzYxaTdCxQ0/Ti8zvdlkfn0kRN2Z+3X6dxvRSkRHRB/7wLuF513PavG/qJdV
+        croyvfWrnU76rJLYdq3MsnLujix7hvd+mtDugXm21dXIs0+Ah5C4dWQc1GfGLnl2iTbwYFa3gjDJ
+        D8mzoRlRY0hJZLvUcalhhjEhtuvGXhhhYxh1y7NjHRmtq5O5PT1Smr05877MnHaaVSLaLLbRbXaC
+        0uAORp+i0RXRyuyBiG7nNxD9vGKyTehmUN1qdhJ6koLEY7P+AW6ChZDfG5DivSDBx32PK44XU9/2
+        LAqOE1u+S8G0Ro7pu8QdAtjey4L0/cd380/DI0G6sC+urs/bkFYi9oW0NLgD0idwdGW0snogo9v5
+        xbUsYSnDq6dpGH1NUJoBPuBfJRSytb1/pkLijfLhdnr/P59DRDi1DwAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS, From
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ''
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '954'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Jun 2021 20:16:59 GMT
+      ETag:
+      - W/"d5e3e7ea6619cf9fff1c3f2884b534b4"
+      Feature-Policy:
+      - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
+        magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - a425af0b-754a-49cb-969f-8b336d93bf4d
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"schedule": {"name": "Schedule Name", "type": "schedule", "time_zone":
+      "UTC", "description": "Automatically created by PDScheduling", "schedule_layers":
+      [{"start": "2015-11-06T20:00:00-05:00", "users": [{"user": {"id": "PIMHWDI",
+      "type": "user"}}], "rotation_turn_length_seconds": 604800, "rotation_virtual_start":
+      "2015-11-06T20:00:00-05:00", "restrictions": [{"type": "weekly_restriction",
+      "start_day_of_week": 1, "start_time_of_day": "01:00:00", "duration_seconds":
+      3600}, {"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
+      "03:00:00", "duration_seconds": 3600}]}]}}'
+    headers:
+      Accept:
+      - application/vnd.pagerduty+json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Token token=REMOVED
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '595'
+      User-Agent:
+      - python-requests/2.25.1
+      content-type:
+      - application/json
+    method: POST
+    uri: https://api.pagerduty.com/schedules
+  response:
+    body:
+      string: '{"schedule":{"id":"P54YGNT","type":"schedule","summary":"Schedule Name","self":"https://api.pagerduty.com/schedules/P54YGNT","html_url":"https://testapiaccount.pagerduty.com/schedules/P54YGNT","name":"Schedule
+        Name","time_zone":"Etc/UTC","description":"Automatically created by PDScheduling","users":[{"id":"PIMHWDI","type":"user_reference","summary":"Fifth
+        User","self":"https://api.pagerduty.com/users/PIMHWDI","html_url":"https://testapiaccount.pagerduty.com/users/PIMHWDI"}],"escalation_policies":[],"schedule_layers":[{"name":"Schedule
+        Layer 2","rendered_schedule_entries":[],"rendered_coverage_percentage":null,"id":"P5RQECF","start":"2021-06-06T20:17:00Z","end":null,"rotation_virtual_start":"2015-11-07T01:00:00Z","rotation_turn_length_seconds":604800,"users":[{"user":{"id":"PIMHWDI","type":"user_reference","summary":"Fifth
+        User","self":"https://api.pagerduty.com/users/PIMHWDI","html_url":"https://testapiaccount.pagerduty.com/users/PIMHWDI"}}],"restrictions":[{"type":"weekly_restriction","start_time_of_day":"01:00:00","duration_seconds":3600,"start_day_of_week":1},{"type":"weekly_restriction","start_time_of_day":"03:00:00","duration_seconds":3600,"start_day_of_week":1}]}],"overrides_subschedule":{"name":"Overrides","rendered_schedule_entries":[],"rendered_coverage_percentage":null},"final_schedule":{"name":"Final
+        Schedule","rendered_schedule_entries":[],"rendered_coverage_percentage":null},"teams":[]}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ''
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1423'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Jun 2021 20:17:00 GMT
+      ETag:
+      - W/"c995a438dbcec84439372af40764e995"
+      Feature-Policy:
+      - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
+        magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - ddfebd07-56c4-4850-8026-e26b705b717b
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/vnd.pagerduty+json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Token token=REMOVED
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+      content-type:
+      - application/json
+    method: GET
+    uri: https://api.pagerduty.com/schedules?limit=100&query=
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5VRy2rDMBD8FaOziVNoL76Vpo8cGgxNKKUUo8qreEEvpNXBDfn3rk2apPSS3lYz
+        O5rd2Z1IqocuG0iift8J7EQtmpvrt8fVWpSChgAM/PQwkrK1Mg4MvhyExUpaGBkwmuGeKKS6qmTA
+        WZBbiF2mYaa8rY5O1cmgJ2vaHM2ZkCARi6VSPju64A83+v+dh9BC++XdyN2TqjbrO56yg6QiBkLv
+        GL/N5K0kVNKYoVARJEFXfA5Fszish27Lqpwgnge0fH56XSxPAY18G0FDBKemMI4xPaCmvthwwyUZ
+        TUZVc/z/v/n81u8/SsH7SsMretcGb1DhdGkmCKSdyrHLoEUS9dV8XgqvdQJ+cEmeJN/GZWNKYX3k
+        LLU0CfbfDRkP6TgCAAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ''
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '299'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Jun 2021 20:17:01 GMT
+      ETag:
+      - W/"d56f3355e775d82bc4e01e93b6895be8"
+      Feature-Policy:
+      - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
+        magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - c0da810f-1897-49bf-972f-0f9b4813c49a
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/vnd.pagerduty+json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Token token=REMOVED
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+      content-type:
+      - application/json
+    method: GET
+    uri: https://api.pagerduty.com/schedules/P54YGNT
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA9VUXW/TMBT9K5GfsyXptg7lDW0rTIJRoBMCNFmec9taOHbkXA+Fqv+d6zROC7x0
+        0l6Q8hD53OPrc+7HhrVyDZXXwMoNUxUr2fzi/OubuwVLGXYNHe8jUtb6uhauo8PPAy25EzVQbAt6
+        ScdrxKYts0w06rQRK3CVx+5U2jqLedpsn2CNtebe6QMiQotEFlJab/CIO0zI/+97UNXAf1kTsBuU
+        2f3iil5ZQSudalBZQ+evPdpaoJJC6y6RDgRClTx2yfx6kKfMili+Bdey8ns06Pb92y/Xt3uDAs4d
+        LMGBkb0Zo00ztcR1ck8Bx3jUJ8rm4/3P9edP/vYhZaRXaJJoDW+sVlJBEEJALAfXoovq/rbyXYCS
+        Cb2chFWkruIjDQy68bIRlvYJHJWdN+AkhdAvK43XOo299enjzdUseIHCIdVgkk+Kk3xK32KSl8Vl
+        meffCKZ8kegs7gQ8KYdeaL6nFhcnBbEvF3lBvIE6xqN3hmswK1zzFqQ1FWmf5uev8vywpsG0ffP/
+        L7UNxXU0K07JUN1dew4D+xPgh+6oI0c4Gs77sbBLXokwxNE2givvdi6PTp1Ng0+92SE8sMLFrCy2
+        6SbuhuNTne0q9NxUD0Fo6CqnaHh56x8PF9bQsR8i/hKtuk3ZUpnQZwebcUg0C0ASd98LZUMQdT+V
+        2+1vltb9pY8FAAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ''
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '524'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Jun 2021 20:17:02 GMT
+      ETag:
+      - W/"c995a438dbcec84439372af40764e995"
+      Feature-Policy:
+      - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
+        magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - 779eaa4e-75b0-4c8b-8ef7-186bf9792840
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"schedule": {"name": "OptDuty", "type": "schedule", "time_zone": "UTC",
+      "description": "Automatically created by PDScheduling", "schedule_layers": [{"start":
+      "2015-11-06T20:00:00-05:00", "users": [{"user": {"id": "PIMHWDI", "type": "user"}}],
+      "rotation_turn_length_seconds": 604800, "rotation_virtual_start": "2015-11-06T20:00:00-05:00",
+      "restrictions": [{"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
+      "03:00:00", "duration_seconds": 3600}], "id": "P5RQECF"}, {"start": "2015-11-06T20:00:00-05:00",
+      "users": [{"user": {"id": "PFQWW1V", "type": "user"}}], "rotation_turn_length_seconds":
+      604800, "rotation_virtual_start": "2015-11-06T20:00:00-05:00", "restrictions":
+      [{"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
+      "05:00:00", "duration_seconds": 3600}]}]}, "id": "P54YGNT"}'
+    headers:
+      Accept:
+      - application/vnd.pagerduty+json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Token token=REMOVED
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '832'
+      User-Agent:
+      - python-requests/2.25.1
+      content-type:
+      - application/json
+    method: PUT
+    uri: https://api.pagerduty.com/schedules/P54YGNT
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA9VVTW/bMAz9K4bOaS0nTbr5NjTNWmAf6ZYu6IZCUGUmESZLhix18Ar/91GJPzJg
+        h7TIYQV8MEQ+knqPpJ5IKTaQeQUkfSIyIymZj8/u3n9akAFxVYHHvceAlD7Pua3w8HPhpt5V6FWC
+        WuHBxrmiTOOYF/K04GuwGZpPhcnjNkMZ96E3LlfMW7UHdFA6BHMhjNfugBia56G8vhInc2C/jQ6n
+        l07Et4sLrC+DUlhZOGk0nr/zzuTcScGVqiJhgTvIoocqmk+/7piQeo0oX4ItSfqjJeX649Vyet2T
+        EuzMwgosaAGBho6amVy5TXSLDoews00Uz7v4z2Xmb3w9aAue3SyXybfDCjb2+QV38V9YcIOv7wcE
+        BeIKNTGaFUZJISEwj4a2c5jiVStHo3ojFkQfgika4UVRiQzlyFgHA+1sF6wzC/MIFjuUFWAFuuAv
+        SbVXatAMwNWQTu/eBvEctw6bZkiHyQmd4LcY0jQ5T+noO5oxXwu0xu0u8Cit81yxHpqMTxJEny9o
+        klKKX4B2/s5bzRTotduwEoTRGd59Qs/eULrfhEHlfkJfi7ZBXItjbaUI6u7mqdkqvwB+qgpHqDO3
+        hLPtHJsVy3jYNHS8ow3Nmbc7ljumRpPA05bs4B5QITBJk/o+zMK/u2V4zG4Zf7m5vJj9x93yWlbX
+        cbpl9NJuwV4Ni8FKfDBY6R/2H8b2qWntx+ifekBWUodVsfcCN4lmwRC1O+5I2RzwfLtY6/oPdatX
+        qvcHAAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ''
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '575'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Jun 2021 20:17:04 GMT
+      ETag:
+      - W/"4879cc905628e3b8a7e00f699384e76a"
+      Feature-Policy:
+      - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
+        magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - 6b43fddd-44d7-41ff-8c3e-d458c2e2d4aa
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/vnd.pagerduty+json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Token token=REMOVED
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+      content-type:
+      - application/json
+    method: GET
+    uri: https://api.pagerduty.com/schedules/P54YGNT
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA9VVTW/bMAz9K4bOaS0nTbr5NjTNWmAf6ZYu6IZCUGUmESZLhix18Ar/91GJPzJg
+        h7TIYQV8MEQ+knqPpJ5IKTaQeQUkfSIyIymZj8/u3n9akAFxVYHHvceAlD7Pua3w8HPhpt5V6FWC
+        WuHBxrmiTOOYF/K04GuwGZpPhcnjNkMZ96E3LlfMW7UHdFA6BHMhjNfugBia56G8vhInc2C/jQ6n
+        l07Et4sLrC+DUlhZOGk0nr/zzuTcScGVqiJhgTvIoocqmk+/7piQeo0oX4ItSfqjJeX649Vyet2T
+        EuzMwgosaAGBho6amVy5TXSLDoews00Uz7v4z2Xmb3w9aAue3SyXybfDCjb2+QV38V9YcIOv7wcE
+        BeIKNTGaFUZJISEwj4a2c5jiVStHo3ojFkQfgika4UVRiQzlyFgHA+1sF6wzC/MIFjuUFWAFuuAv
+        SbVXatAMwNWQTu/eBvEctw6bZkiHyQmd4LcY0jQ5T+noO5oxXwu0xu0u8Cit81yxHpqMTxJEny9o
+        klKKX4B2/s5bzRTotduwEoTRGd59Qs/eULrfhEHlfkJfi7ZBXItjbaUI6u7mqdkqvwB+qgpHqDO3
+        hLPtHJsVy3jYNHS8ow3Nmbc7ljumRpPA05bs4B5QITBJk/o+zMK/u2V4zG4Zf7m5vJj9x93yWlbX
+        cbpl9NJuwV4Ni8FKfDBY6R/2H8b2qWntx+ifekBWUodVsfcCN4lmwRC1O+5I2RzwfLtY6/oPdatX
+        qvcHAAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ''
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '575'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Jun 2021 20:17:05 GMT
+      ETag:
+      - W/"4879cc905628e3b8a7e00f699384e76a"
+      Feature-Policy:
+      - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
+        magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - f9327544-054f-4656-a008-56f2ae7d0335
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"schedule": {"name": "OptDuty", "type": "schedule", "time_zone": "UTC",
+      "description": "Automatically created by PDScheduling", "schedule_layers": [{"start":
+      "2015-11-06T20:00:00-05:00", "users": [{"user": {"id": "PFQWW1V", "type": "user"}}],
+      "rotation_turn_length_seconds": 604800, "rotation_virtual_start": "2015-11-06T20:00:00-05:00",
+      "restrictions": [{"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
+      "03:00:00", "duration_seconds": 3600}], "id": "PH20DY9"}, {"start": "2015-11-06T20:00:00-05:00",
+      "users": [{"user": {"id": "PFQWW1V", "type": "user"}}], "rotation_turn_length_seconds":
+      604800, "rotation_virtual_start": "2015-11-06T20:00:00-05:00", "restrictions":
+      [{"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
+      "03:00:00", "duration_seconds": 3600}], "id": "P5RQECF"}]}, "id": "P54YGNT"}'
+    headers:
+      Accept:
+      - application/vnd.pagerduty+json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Token token=REMOVED
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '849'
+      User-Agent:
+      - python-requests/2.25.1
+      content-type:
+      - application/json
+    method: PUT
+    uri: https://api.pagerduty.com/schedules/P54YGNT
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1VUWvbMBD+K0bPbi0nbbr5bTTN9jC2dEtXulGEKl8SMVky8rnDC/7vPSWxnY09
+        tBAYg4EfzH333em+O502rFJryGsDLNswnbOMzc/P7t5+WLCYYVOSefCIWVUXhfQNGT+WOK2xIa8K
+        zJIMa8SyypJElvq0lCvwOcGnyhVJl6FKhtBrLIyovTkgIlRIZKmUqy0+I4aVRTjecBLUBYifzgbr
+        FarkZnFJ58uhUl6XqJ0l+5saXSFRK2lMEykPEiGPHppoPv28U0LbFbHqCnzFsm+dKLPr29v0yyBK
+        wIWHJXiwCoIMvTQz53Ed3ZDDc9TZJkrmffyXKvMrv72PGdUrDZXorCid0UpDKISArhHCyKarbi/i
+        vnaI3gcoGtHJqbCcqstFTwOLvg/Ww8o9gqeGixK8Ihf6ZZmtjYm7efp0fXU5C1qg9Eg9GPFResIn
+        9C1GPEsvMj75SjDl64je4a6AR+2xlkYM1PT8JCX2xYKnGef0BWrvj7W3woBd4VpUoJzNqfYJP3vF
+        +WFPg2jDwP8rvQ3N9XRLvFahu7vx3F/SHwDfTUMT2cOd4GJ7LdxS5DJcXD7eyUZwXvudyr1S40nQ
+        aSt2cA+sEJhlaXvfxhv252kZH3Na3o349O71/2mJaaO+bEf+tgn+8rTQrIbF4DXtX1HVD4fvTLe5
+        O/wY89PGbKltWBUHD9o+0SwAUbfjjpQNQRbbxdq2T1arhbFGBwAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ''
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '552'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Jun 2021 20:17:07 GMT
+      ETag:
+      - W/"d8e0ef960e9e52482b15e272d132095f"
+      Feature-Policy:
+      - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
+        magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - 93c1d9f3-53c1-4ba7-b4d7-92bc88a17ab5
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

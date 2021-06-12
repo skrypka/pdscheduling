@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pdscheduling"
+version = "0.1.0"
+description = ""
+authors = ["Roman <roman@optduty.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+responses = "^0.13.3"
+black = "^21.5b1"
+pytest-recording = "^0.11.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
