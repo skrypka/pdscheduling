@@ -6,10 +6,6 @@ import responses
 from pdscheduling import __version__, PagerDuty, PDSchedulingNetworkException
 
 
-def test_version():
-    assert __version__ == '0.1.0'
-
-
 @responses.activate
 def test_get_users():
     responses.add(
