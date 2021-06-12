@@ -46,8 +46,5 @@ jobs:
       - name: Install library
         run: poetry install --no-interaction
 
-      - name: Prepare
-        run: make prepare
-
       - name: Test
         run: make test

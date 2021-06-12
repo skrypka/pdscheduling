@@ -281,6 +281,14 @@ optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
+name = "types-requests"
+version = "0.1.10"
+description = "Typing stubs for requests"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "typing-extensions"
 version = "3.10.0.0"
 description = "Backported and Experimental Type Hints for Python 3.5+"
@@ -346,7 +354,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "e854a6dd2572c92cf1f8fd2c304a1fe5072a44734aefcbf06c457f78a00b4255"
+content-hash = "e45b8efb7912556429fb5e3fdf0ab8794f382eaf23389c48ad3c6a775568bdbe"
 
 [metadata.files]
 appdirs = [
@@ -574,6 +582,9 @@ six = [
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
+]
+types-requests = [
+    {file = "types_requests-0.1.10-py2.py3-none-any.whl", hash = "sha256:5b1864f1564adb810123c563b4de86236c14058978ec1294b07a988c532cb079"},
 ]
 typing-extensions = [
     {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},

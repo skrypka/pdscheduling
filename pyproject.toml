@@ -15,6 +15,7 @@ responses = "^0.13.3"
 black = "^21.5b1"
 pytest-recording = "^0.11.0"
 mypy = "^0.902"
+types-requests = "^0.1.10"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
