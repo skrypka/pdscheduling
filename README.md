@@ -1,6 +1,8 @@
 # PDScheduling - a library to create schedules in PagerDuty
 
-Just generate an array with a user for every hour for the next week - and the library will push it to PagerDuty. 
+Just generate an array with a user for every hour for the next week - and the library will push it to PagerDuty.
+
+Install: `pip install pdscheduling`
 
 ## Example:
 

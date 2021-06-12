@@ -8,3 +8,6 @@ black:
 
 prepare:
 	poetry run mypy --install-types
+
+deploy:
+	poetry publish --build
