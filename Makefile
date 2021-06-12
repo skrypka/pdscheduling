@@ -5,3 +5,6 @@ test:
 
 black:
 	poetry run black pdscheduling
+
+prepare:
+	poetry run mypy --install-types
