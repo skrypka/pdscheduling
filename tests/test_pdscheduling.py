@@ -3,7 +3,7 @@ from typing import Optional, List
 import pytest
 import responses
 
-from pdscheduling import __version__, PagerDuty, PDSchedulingNetworkException
+from pdscheduling import PagerDuty, PDSchedulingNetworkException
 
 
 @responses.activate
@@ -28,8 +28,10 @@ def test_incorrect_token():
         status=401,
     )
     client = PagerDuty("123")
-    with pytest.raises(PDSchedulingNetworkException):
+    with pytest.raises(PDSchedulingNetworkException, match="PagerDuty request failed: Unauthorized") as exc:
         client.get_users()
+    assert exc.value.status_code == 401
+    assert exc.value.reason == "Unauthorized"
 
 
 @pytest.mark.vcr()

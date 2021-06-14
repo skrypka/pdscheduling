@@ -4,7 +4,7 @@ from typing import List, Optional
 
 import requests
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 
 class PDSchedulingException(Exception):
@@ -12,7 +12,15 @@ class PDSchedulingException(Exception):
 
 
 class PDSchedulingNetworkException(PDSchedulingException):
-    pass
+    status_code = None
+    reason = ""
+
+    def __init__(
+        self, message, status_code: Optional[int] = None, reason: Optional[str] = None
+    ):
+        self.status_code = status_code
+        self.reason = reason or "Unknown"
+        super().__init__(message)
 
 
 def _generate_schedule_data(name, hours, layers_ids, schedule_id):
@@ -70,6 +78,19 @@ def _generate_schedule_data(name, hours, layers_ids, schedule_id):
     return data
 
 
+def _create_scheduling_exception(result):
+    if result is None:
+        message = "PagerDuty request failed with unknown status code"
+    else:
+        message = f"PagerDuty request failed: {result.reason}"
+
+    return PDSchedulingNetworkException(
+        message=message,
+        status_code=None if result is None else result.status_code,
+        reason=None if result is None else result.reason,
+    )
+
+
 class PagerDuty:
     def __init__(self, token):
         self.token = token
@@ -88,6 +109,7 @@ class PagerDuty:
         """
 
         # TODO: add support for pagination
+        result = None
         try:
             result = requests.get(
                 url="https://api.pagerduty.com/users?include%5B%5D=teams&limit=100",
@@ -95,7 +117,7 @@ class PagerDuty:
             )
             result.raise_for_status()
         except requests.RequestException as e:
-            raise PDSchedulingNetworkException() from e
+            raise _create_scheduling_exception(result) from e
         return result.json()["users"]
 
     def schedules(self, query=""):
@@ -105,6 +127,7 @@ class PagerDuty:
         :return: A list of schedules
         """
         # TODO: add support for pagination
+        result = None
         try:
             result = requests.get(
                 url=f"https://api.pagerduty.com/schedules?limit=100&query={query}",
@@ -112,7 +135,7 @@ class PagerDuty:
             )
             result.raise_for_status()
         except requests.RequestException as e:
-            raise PDSchedulingNetworkException() from e
+            raise _create_scheduling_exception(result) from e
         return result.json()["schedules"]
 
     def get_schedule(self, *, schedule_id):
@@ -121,6 +144,7 @@ class PagerDuty:
         :param schedule_id:
         :return: A schedule
         """
+        result = None
         try:
             result = requests.get(
                 url=f"https://api.pagerduty.com/schedules/{schedule_id}",
@@ -128,7 +152,7 @@ class PagerDuty:
             )
             result.raise_for_status()
         except requests.RequestException as e:
-            raise PDSchedulingNetworkException() from e
+            raise _create_scheduling_exception(result) from e
         return result.json()
 
     def create_schedule(self, *, name: str, hours: List[Optional[str]]):
@@ -140,6 +164,7 @@ class PagerDuty:
         """
         data = _generate_schedule_data(name, hours, [], None)
 
+        result = None
         try:
             result = requests.post(
                 url="https://api.pagerduty.com/schedules",
@@ -148,7 +173,7 @@ class PagerDuty:
             )
             result.raise_for_status()
         except requests.RequestException as e:
-            raise PDSchedulingNetworkException() from e
+            raise _create_scheduling_exception(result) from e
         return result
 
     def update_schedule(

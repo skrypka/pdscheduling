@@ -1,6 +1,8 @@
-test:
+check:
 	poetry run black pdscheduling --check
 	poetry run mypy .
+
+test:
 	poetry run pytest --block-network
 
 black:
@@ -9,5 +11,5 @@ black:
 prepare:
 	poetry run mypy --install-types
 
-deploy:
+deploy: check test
 	poetry publish --build
