@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pdscheduling"
-version = "0.1.2"
+version = "0.2.0"
 description = ""
 authors = ["Roman <roman@optduty.com>"]
 license = "MIT"
@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = "^2.25.1"
+pdpyras = "^4.3.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

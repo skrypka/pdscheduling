@@ -10,8 +10,8 @@ from pdscheduling import PagerDuty, PDSchedulingNetworkException
 def test_get_users():
     responses.add(
         responses.GET,
-        url="https://api.pagerduty.com/users?include%5B%5D=teams&limit=100",
-        json={"users": [{"id": "abc"}]},
+        url="https://api.pagerduty.com/users?limit=100&include%5B%5D=teams&offset=0",
+        json={"users": [{"id": "abc"}], "total": 1, "more": False},
         status=200,
     )
 
@@ -24,7 +24,7 @@ def test_get_users():
 def test_incorrect_token():
     responses.add(
         responses.GET,
-        url="https://api.pagerduty.com/users?include%5B%5D=teams&limit=100",
+        url="https://api.pagerduty.com/users?limit=100&include%5B%5D=teams&offset=0",
         status=401,
     )
     client = PagerDuty("123")

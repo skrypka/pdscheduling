@@ -4,7 +4,9 @@ from typing import List, Optional
 
 import requests
 
-__version__ = "0.1.2"
+__version__ = "0.2.0"
+
+from pdpyras import APISession, PDClientError
 
 
 class PDSchedulingException(Exception):
@@ -109,16 +111,12 @@ class PagerDuty:
         """
 
         # TODO: add support for pagination
-        result = None
+        session = APISession(self.token)
         try:
-            result = requests.get(
-                url="https://api.pagerduty.com/users?include%5B%5D=teams&limit=100",
-                headers=self.headers(),
-            )
-            result.raise_for_status()
-        except requests.RequestException as e:
-            raise _create_scheduling_exception(result) from e
-        return result.json()["users"]
+            users = list(session.iter_all("users", params={"include[]": "teams"}))
+        except PDClientError as e:
+            raise _create_scheduling_exception(e.response) from e
+        return users
 
     def schedules(self, query=""):
         """Fetches all schedules by default or some specific by name

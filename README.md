@@ -25,10 +25,6 @@ pd.create_or_update_schedule(name="Automatic Schedule", hours=schedule)
 You can, but it will be harder. PagerDuty don't give straightforward API for this, instead you need to create schedule
 with a layer for every developer with proper restriction.
 
-## Limitation
-
-Library can fetch only first 100 users and schedules. It's possible to fix, I just did not prioritize this feature.
-
 ## OptDuty
 
 The library extracted from https://optduty.com. If you need a help with library or to create scheduling system please

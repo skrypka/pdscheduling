@@ -43,7 +43,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Jun 2021 20:16:58 GMT
+      - Mon, 19 Jul 2021 23:47:06 GMT
       ETag:
       - W/"fefe95e6f6abcef5260b8270a632e2d1"
       Feature-Policy:
@@ -60,7 +60,7 @@ interactions:
       X-Content-Type-Options:
       - nosniff
       X-Request-Id:
-      - 65105eaa-c77e-472a-86b3-e3bf0ced62cb
+      - 74ae4158-04d8-4c51-9254-e7038a2bd0d7
       X-XSS-Protection:
       - 1; mode=block
     status:
@@ -78,11 +78,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1
-      content-type:
-      - application/json
+      - pdpyras/4.3.0 python-requests/2.25.1 Python/3.8
     method: GET
-    uri: https://api.pagerduty.com/users?include%5B%5D=teams&limit=100
+    uri: https://api.pagerduty.com/users?limit=100&include%5B%5D=teams&offset=0
   response:
     body:
       string: !!binary |
@@ -125,7 +123,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Jun 2021 20:16:59 GMT
+      - Mon, 19 Jul 2021 23:47:07 GMT
       ETag:
       - W/"d5e3e7ea6619cf9fff1c3f2884b534b4"
       Feature-Policy:
@@ -142,7 +140,7 @@ interactions:
       X-Content-Type-Options:
       - nosniff
       X-Request-Id:
-      - a425af0b-754a-49cb-969f-8b336d93bf4d
+      - 9053fcf4-a3b0-49e3-a10e-0ba859a36441
       X-XSS-Protection:
       - 1; mode=block
     status:
@@ -176,10 +174,10 @@ interactions:
     uri: https://api.pagerduty.com/schedules
   response:
     body:
-      string: '{"schedule":{"id":"P54YGNT","type":"schedule","summary":"Schedule Name","self":"https://api.pagerduty.com/schedules/P54YGNT","html_url":"https://testapiaccount.pagerduty.com/schedules/P54YGNT","name":"Schedule
+      string: '{"schedule":{"id":"PJ2IX7O","type":"schedule","summary":"Schedule Name","self":"https://api.pagerduty.com/schedules/PJ2IX7O","html_url":"https://testapiaccount.pagerduty.com/schedules/PJ2IX7O","name":"Schedule
         Name","time_zone":"Etc/UTC","description":"Automatically created by PDScheduling","users":[{"id":"PIMHWDI","type":"user_reference","summary":"Fifth
         User","self":"https://api.pagerduty.com/users/PIMHWDI","html_url":"https://testapiaccount.pagerduty.com/users/PIMHWDI"}],"escalation_policies":[],"schedule_layers":[{"name":"Schedule
-        Layer 2","rendered_schedule_entries":[],"rendered_coverage_percentage":null,"id":"P5RQECF","start":"2021-06-06T20:17:00Z","end":null,"rotation_virtual_start":"2015-11-07T01:00:00Z","rotation_turn_length_seconds":604800,"users":[{"user":{"id":"PIMHWDI","type":"user_reference","summary":"Fifth
+        Layer 2","rendered_schedule_entries":[],"rendered_coverage_percentage":null,"id":"PN0SNTP","start":"2021-07-19T23:47:08Z","end":null,"rotation_virtual_start":"2015-11-07T01:00:00Z","rotation_turn_length_seconds":604800,"users":[{"user":{"id":"PIMHWDI","type":"user_reference","summary":"Fifth
         User","self":"https://api.pagerduty.com/users/PIMHWDI","html_url":"https://testapiaccount.pagerduty.com/users/PIMHWDI"}}],"restrictions":[{"type":"weekly_restriction","start_time_of_day":"01:00:00","duration_seconds":3600,"start_day_of_week":1},{"type":"weekly_restriction","start_time_of_day":"03:00:00","duration_seconds":3600,"start_day_of_week":1}]}],"overrides_subschedule":{"name":"Overrides","rendered_schedule_entries":[],"rendered_coverage_percentage":null},"final_schedule":{"name":"Final
         Schedule","rendered_schedule_entries":[],"rendered_coverage_percentage":null},"teams":[]}}'
     headers:
@@ -202,9 +200,9 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Jun 2021 20:17:00 GMT
+      - Mon, 19 Jul 2021 23:47:09 GMT
       ETag:
-      - W/"c995a438dbcec84439372af40764e995"
+      - W/"5a0807a900c03ebd6fde9dec51e498b2"
       Feature-Policy:
       - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
         magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
@@ -217,7 +215,7 @@ interactions:
       X-Content-Type-Options:
       - nosniff
       X-Request-Id:
-      - ddfebd07-56c4-4850-8026-e26b705b717b
+      - 26603c22-7ad1-4dc3-a667-0c3e5c88be27
       X-XSS-Protection:
       - 1; mode=block
     status:
@@ -243,12 +241,12 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA5VRy2rDMBD8FaOziVNoL76Vpo8cGgxNKKUUo8qreEEvpNXBDfn3rk2apPSS3lYz
-        O5rd2Z1IqocuG0iift8J7EQtmpvrt8fVWpSChgAM/PQwkrK1Mg4MvhyExUpaGBkwmuGeKKS6qmTA
-        WZBbiF2mYaa8rY5O1cmgJ2vaHM2ZkCARi6VSPju64A83+v+dh9BC++XdyN2TqjbrO56yg6QiBkLv
-        GL/N5K0kVNKYoVARJEFXfA5Fszish27Lqpwgnge0fH56XSxPAY18G0FDBKemMI4xPaCmvthwwyUZ
-        TUZVc/z/v/n81u8/SsH7SsMretcGb1DhdGkmCKSdyrHLoEUS9dV8XgqvdQJ+cEmeJN/GZWNKYX3k
-        LLU0CfbfDRkP6TgCAAA=
+        H4sIAAAAAAAAA5VRTUvEMBD9KyXnslm9CL2Jq1hBLeiiIFKy6WQbyBfJ5FCX/e9Oy9pd8bLeJu/N
+        y5t5s2NJ9tBlA4lVHzumO1ax5uGyfr96ZiXDIQABPz2EpGytiAOBLwdh8SQsjAwYRXCPGFLFuQh6
+        EcQWYpdxWEhv+ezEjwY9WtPmaE6ECAlJLKT02eEZf7jR/+88qC20X96N3C1Kvn69oSk7SDLqgNo7
+        wq8zeitQS2HMUMgIAqErNkPRrA7rabclVU4QTwOqH+/fVvUxoJFvIyiI4OQUxhzTnVbYF2tqOCej
+        yYg38///zee3fv9ZMtpXGFrRuzZ4o6WeLk0EgrBTOXYZbTWy6mK5LJlXKgE9qESPgm7jsjElsz5S
+        lkqYBPtvbIguYjgCAAA=
     headers:
       Access-Control-Allow-Headers:
       - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
@@ -271,9 +269,9 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Jun 2021 20:17:01 GMT
+      - Mon, 19 Jul 2021 23:47:10 GMT
       ETag:
-      - W/"d56f3355e775d82bc4e01e93b6895be8"
+      - W/"d45e3785b3f06b57f41a620ec27561e5"
       Feature-Policy:
       - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
         magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
@@ -288,7 +286,7 @@ interactions:
       X-Content-Type-Options:
       - nosniff
       X-Request-Id:
-      - c0da810f-1897-49bf-972f-0f9b4813c49a
+      - b620fdaf-d273-4977-a142-e7532a64a727
       X-XSS-Protection:
       - 1; mode=block
     status:
@@ -310,20 +308,20 @@ interactions:
       content-type:
       - application/json
     method: GET
-    uri: https://api.pagerduty.com/schedules/P54YGNT
+    uri: https://api.pagerduty.com/schedules/PJ2IX7O
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA9VUXW/TMBT9K5GfsyXptg7lDW0rTIJRoBMCNFmec9taOHbkXA+Fqv+d6zROC7x0
-        0l6Q8hD53OPrc+7HhrVyDZXXwMoNUxUr2fzi/OubuwVLGXYNHe8jUtb6uhauo8PPAy25EzVQbAt6
-        ScdrxKYts0w06rQRK3CVx+5U2jqLedpsn2CNtebe6QMiQotEFlJab/CIO0zI/+97UNXAf1kTsBuU
-        2f3iil5ZQSudalBZQ+evPdpaoJJC6y6RDgRClTx2yfx6kKfMili+Bdey8ns06Pb92y/Xt3uDAs4d
-        LMGBkb0Zo00ztcR1ck8Bx3jUJ8rm4/3P9edP/vYhZaRXaJJoDW+sVlJBEEJALAfXoovq/rbyXYCS
-        Cb2chFWkruIjDQy68bIRlvYJHJWdN+AkhdAvK43XOo299enjzdUseIHCIdVgkk+Kk3xK32KSl8Vl
-        meffCKZ8kegs7gQ8KYdeaL6nFhcnBbEvF3lBvIE6xqN3hmswK1zzFqQ1FWmf5uev8vywpsG0ffP/
-        L7UNxXU0K07JUN1dew4D+xPgh+6oI0c4Gs77sbBLXokwxNE2givvdi6PTp1Ng0+92SE8sMLFrCy2
-        6SbuhuNTne0q9NxUD0Fo6CqnaHh56x8PF9bQsR8i/hKtuk3ZUpnQZwebcUg0C0ASd98LZUMQdT+V
-        2+1vltb9pY8FAAA=
+        H4sIAAAAAAAAA9VUXW/TMBT9K5Gf0yVpxzryhhgTRdBVWicQaLI857a1cOzIvh4KU//7rtskLfDS
+        SXtBykPkc4+vz7kfT8zLDVRBAyufmKpYyRafxrNv0xuWMmwbOj5EpMyHuhaupcPbjpbMRQ0U60Gv
+        6HiD2Pgyy0SjzhqxBlcFbM+krbM+j88OCTZYax6cPiIieCSykNIGgyfcYWL+f9+Dqgb+25qIfUCZ
+        3S3f0ysr8NKpBpU1dP4uoK0FKim0bhPpQCBUyUObLK46ecqsiRU8OM/KH71Bsy8fv17NDgZFnDtY
+        gQMjd2YMNl2rFW6SOwo4xaNdomwx3P9Sf/7kb+9TRnqFJonW8MZqJRVEIQT05eBatL26v638HKFk
+        TC8nYRWpq/hAA4NuuGyApX0ER2XnDThJIfTLShO0Trvemue38+UieoHCIdVgnI+LUT4dFW+X40l5
+        Pi3zy+8EU76e6CzuBTwqh0FofqAWb0ZFZC/zosxz+iJ1iMfgDNdg1rjhHqQ1FWm/yM8v8/y4ptG0
+        Q/P/L7WNxXU0K07JWN19e3YD+wvgp26pIwe4N5zvxsKueCXiEPe2EVwFt3d5cGpyEX3amR3DIyte
+        zMpimz71u+H0VJN9hV6a6j4KjV3lFA0v9+HheGF1HXvT46/RqtuUrZSJfXa0GbtE1xFI+t33StkQ
+        RL2byu32GRuD8HaPBQAA
     headers:
       Access-Control-Allow-Headers:
       - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
@@ -342,13 +340,13 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '524'
+      - '528'
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Jun 2021 20:17:02 GMT
+      - Mon, 19 Jul 2021 23:47:12 GMT
       ETag:
-      - W/"c995a438dbcec84439372af40764e995"
+      - W/"5a0807a900c03ebd6fde9dec51e498b2"
       Feature-Policy:
       - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
         magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
@@ -362,24 +360,24 @@ interactions:
       - Accept-Encoding
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 779eaa4e-75b0-4c8b-8ef7-186bf9792840
       X-XSS-Protection:
       - 1; mode=block
+      x-request-id:
+      - 643544ad-6eea-4067-92be-b7ef4d0e2b78
     status:
       code: 200
       message: OK
 - request:
     body: '{"schedule": {"name": "OptDuty", "type": "schedule", "time_zone": "UTC",
       "description": "Automatically created by PDScheduling", "schedule_layers": [{"start":
-      "2015-11-06T20:00:00-05:00", "users": [{"user": {"id": "PIMHWDI", "type": "user"}}],
+      "2015-11-06T20:00:00-05:00", "users": [{"user": {"id": "PFQWW1V", "type": "user"}}],
       "rotation_turn_length_seconds": 604800, "rotation_virtual_start": "2015-11-06T20:00:00-05:00",
       "restrictions": [{"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
-      "03:00:00", "duration_seconds": 3600}], "id": "P5RQECF"}, {"start": "2015-11-06T20:00:00-05:00",
-      "users": [{"user": {"id": "PFQWW1V", "type": "user"}}], "rotation_turn_length_seconds":
+      "05:00:00", "duration_seconds": 3600}], "id": "PN0SNTP"}, {"start": "2015-11-06T20:00:00-05:00",
+      "users": [{"user": {"id": "PIMHWDI", "type": "user"}}], "rotation_turn_length_seconds":
       604800, "rotation_virtual_start": "2015-11-06T20:00:00-05:00", "restrictions":
       [{"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
-      "05:00:00", "duration_seconds": 3600}]}]}, "id": "P54YGNT"}'
+      "03:00:00", "duration_seconds": 3600}]}]}, "id": "PJ2IX7O"}'
     headers:
       Accept:
       - application/vnd.pagerduty+json;version=2
@@ -396,21 +394,21 @@ interactions:
       content-type:
       - application/json
     method: PUT
-    uri: https://api.pagerduty.com/schedules/P54YGNT
+    uri: https://api.pagerduty.com/schedules/PJ2IX7O
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA9VVTW/bMAz9K4bOaS0nTbr5NjTNWmAf6ZYu6IZCUGUmESZLhix18Ar/91GJPzJg
-        h7TIYQV8MEQ+knqPpJ5IKTaQeQUkfSIyIymZj8/u3n9akAFxVYHHvceAlD7Pua3w8HPhpt5V6FWC
-        WuHBxrmiTOOYF/K04GuwGZpPhcnjNkMZ96E3LlfMW7UHdFA6BHMhjNfugBia56G8vhInc2C/jQ6n
-        l07Et4sLrC+DUlhZOGk0nr/zzuTcScGVqiJhgTvIoocqmk+/7piQeo0oX4ItSfqjJeX649Vyet2T
-        EuzMwgosaAGBho6amVy5TXSLDoews00Uz7v4z2Xmb3w9aAue3SyXybfDCjb2+QV38V9YcIOv7wcE
-        BeIKNTGaFUZJISEwj4a2c5jiVStHo3ojFkQfgika4UVRiQzlyFgHA+1sF6wzC/MIFjuUFWAFuuAv
-        SbVXatAMwNWQTu/eBvEctw6bZkiHyQmd4LcY0jQ5T+noO5oxXwu0xu0u8Cit81yxHpqMTxJEny9o
-        klKKX4B2/s5bzRTotduwEoTRGd59Qs/eULrfhEHlfkJfi7ZBXItjbaUI6u7mqdkqvwB+qgpHqDO3
-        hLPtHJsVy3jYNHS8ow3Nmbc7ljumRpPA05bs4B5QITBJk/o+zMK/u2V4zG4Zf7m5vJj9x93yWlbX
-        cbpl9NJuwV4Ni8FKfDBY6R/2H8b2qWntx+ifekBWUodVsfcCN4lmwRC1O+5I2RzwfLtY6/oPdatX
-        qvcHAAA=
+        H4sIAAAAAAAAA9VV32/aMBD+VyI/hyaBUra8VWNsTFvLVDqmTZXlOgasOXbknDulVf73nSE/mLQH
+        WvGwSjwg333ny/d9d34iJd+KzClB0iciM5KSxafh/PvkmoQEqgKP+4yQlC7Pma3w8LqAqYMKs0qh
+        1niwBSjKNIpYIc8KthE2w/AZN3nU3lBGfekt5Io6qw6AIEpAMOPcOA1H1NAs9+31nYDMBX002p++
+        Bx7dLt9hf5kouZUFSKPx/NKByRlIzpSqAm4FA5EF91WwmN7smZB6gyhXCluS9GdLyvzLx9V03pPi
+        49SKtbBCc+Fp6KiZyTVsg1tMOIad3UXRoqv/XGb+xtdh2/Ds62qVfDuuYWOf33BX/4UNN/j6LiQo
+        EFOoidG0MEpyKTzzGGidQxWrWjka1RuxRPDZh4IRfigqkaEcGe1gQoPtinVhbh6ERYfSQliOKfiX
+        pNopFTYDcPlhPJlMvXjALKBphvEwGcSTQfJ2ORyl55M0Gf3AMN7XAq2B/Qc8SAuOKdpDk/Eg8ehl
+        nKRxjD8P7fLBWU2V0BvY0lJwozP89ov4/E0cH5rQq9xP6GsxoxfX4lhbyb26+3lqtspvIX6pCkeo
+        C7eE090cmzXNmN808WhPG4YzZ/csd0yNLjxPO7J9ukf5wiRN6js/C/92y/CUbrmKb66Wi//YLa9l
+        E5zGLeOXugW96heDlfhg0NLdHz6M7VPTxk/hnzoka6n9qjh4gZuLZj4QtDvuRLeBYPlusdb1Hy68
+        hbH3BwAA
     headers:
       Access-Control-Allow-Headers:
       - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
@@ -429,13 +427,13 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '575'
+      - '576'
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Jun 2021 20:17:04 GMT
+      - Mon, 19 Jul 2021 23:47:13 GMT
       ETag:
-      - W/"4879cc905628e3b8a7e00f699384e76a"
+      - W/"0f76ce9536ce9e4dc8832553fbe052be"
       Feature-Policy:
       - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
         magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
@@ -450,7 +448,7 @@ interactions:
       X-Content-Type-Options:
       - nosniff
       X-Request-Id:
-      - 6b43fddd-44d7-41ff-8c3e-d458c2e2d4aa
+      - 1df77284-6678-4f67-8110-6b69ad9ee34c
       X-XSS-Protection:
       - 1; mode=block
     status:
@@ -472,21 +470,21 @@ interactions:
       content-type:
       - application/json
     method: GET
-    uri: https://api.pagerduty.com/schedules/P54YGNT
+    uri: https://api.pagerduty.com/schedules/PJ2IX7O
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA9VVTW/bMAz9K4bOaS0nTbr5NjTNWmAf6ZYu6IZCUGUmESZLhix18Ar/91GJPzJg
-        h7TIYQV8MEQ+knqPpJ5IKTaQeQUkfSIyIymZj8/u3n9akAFxVYHHvceAlD7Pua3w8HPhpt5V6FWC
-        WuHBxrmiTOOYF/K04GuwGZpPhcnjNkMZ96E3LlfMW7UHdFA6BHMhjNfugBia56G8vhInc2C/jQ6n
-        l07Et4sLrC+DUlhZOGk0nr/zzuTcScGVqiJhgTvIoocqmk+/7piQeo0oX4ItSfqjJeX649Vyet2T
-        EuzMwgosaAGBho6amVy5TXSLDoews00Uz7v4z2Xmb3w9aAue3SyXybfDCjb2+QV38V9YcIOv7wcE
-        BeIKNTGaFUZJISEwj4a2c5jiVStHo3ojFkQfgika4UVRiQzlyFgHA+1sF6wzC/MIFjuUFWAFuuAv
-        SbVXatAMwNWQTu/eBvEctw6bZkiHyQmd4LcY0jQ5T+noO5oxXwu0xu0u8Cit81yxHpqMTxJEny9o
-        klKKX4B2/s5bzRTotduwEoTRGd59Qs/eULrfhEHlfkJfi7ZBXItjbaUI6u7mqdkqvwB+qgpHqDO3
-        hLPtHJsVy3jYNHS8ow3Nmbc7ljumRpPA05bs4B5QITBJk/o+zMK/u2V4zG4Zf7m5vJj9x93yWlbX
-        cbpl9NJuwV4Ni8FKfDBY6R/2H8b2qWntx+ifekBWUodVsfcCN4lmwRC1O+5I2RzwfLtY6/oPdatX
-        qvcHAAA=
+        H4sIAAAAAAAAA9VV32/aMBD+VyI/hyaBUra8VWNsTFvLVDqmTZXlOgasOXbknDulVf73nSE/mLQH
+        WvGwSjwg333ny/d9d34iJd+KzClB0iciM5KSxafh/PvkmoQEqgKP+4yQlC7Pma3w8LqAqYMKs0qh
+        1niwBSjKNIpYIc8KthE2w/AZN3nU3lBGfekt5Io6qw6AIEpAMOPcOA1H1NAs9+31nYDMBX002p++
+        Bx7dLt9hf5kouZUFSKPx/NKByRlIzpSqAm4FA5EF91WwmN7smZB6gyhXCluS9GdLyvzLx9V03pPi
+        49SKtbBCc+Fp6KiZyTVsg1tMOIad3UXRoqv/XGb+xtdh2/Ds62qVfDuuYWOf33BX/4UNN/j6LiQo
+        EFOoidG0MEpyKTzzGGidQxWrWjka1RuxRPDZh4IRfigqkaEcGe1gQoPtinVhbh6ERYfSQliOKfiX
+        pNopFTYDcPlhPJlMvXjALKBphvEwGcSTQfJ2ORyl55M0Gf3AMN7XAq2B/Qc8SAuOKdpDk/Eg8ehl
+        nKRxjD8P7fLBWU2V0BvY0lJwozP89ov4/E0cH5rQq9xP6GsxoxfX4lhbyb26+3lqtspvIX6pCkeo
+        C7eE090cmzXNmN808WhPG4YzZ/csd0yNLjxPO7J9ukf5wiRN6js/C/92y/CUbrmKb66Wi//YLa9l
+        E5zGLeOXugW96heDlfhg0NLdHz6M7VPTxk/hnzoka6n9qjh4gZuLZj4QtDvuRLeBYPlusdb1Hy68
+        hbH3BwAA
     headers:
       Access-Control-Allow-Headers:
       - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
@@ -505,13 +503,13 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '575'
+      - '576'
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Jun 2021 20:17:05 GMT
+      - Mon, 19 Jul 2021 23:47:15 GMT
       ETag:
-      - W/"4879cc905628e3b8a7e00f699384e76a"
+      - W/"0f76ce9536ce9e4dc8832553fbe052be"
       Feature-Policy:
       - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
         magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
@@ -525,10 +523,10 @@ interactions:
       - Accept-Encoding
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - f9327544-054f-4656-a008-56f2ae7d0335
       X-XSS-Protection:
       - 1; mode=block
+      x-request-id:
+      - ef88300c-28eb-4753-9632-95ba0a4cd3a2
     status:
       code: 200
       message: OK
@@ -538,11 +536,11 @@ interactions:
       "2015-11-06T20:00:00-05:00", "users": [{"user": {"id": "PFQWW1V", "type": "user"}}],
       "rotation_turn_length_seconds": 604800, "rotation_virtual_start": "2015-11-06T20:00:00-05:00",
       "restrictions": [{"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
-      "03:00:00", "duration_seconds": 3600}], "id": "PH20DY9"}, {"start": "2015-11-06T20:00:00-05:00",
+      "03:00:00", "duration_seconds": 3600}], "id": "PAG577D"}, {"start": "2015-11-06T20:00:00-05:00",
       "users": [{"user": {"id": "PFQWW1V", "type": "user"}}], "rotation_turn_length_seconds":
       604800, "rotation_virtual_start": "2015-11-06T20:00:00-05:00", "restrictions":
       [{"type": "weekly_restriction", "start_day_of_week": 1, "start_time_of_day":
-      "03:00:00", "duration_seconds": 3600}], "id": "P5RQECF"}]}, "id": "P54YGNT"}'
+      "03:00:00", "duration_seconds": 3600}], "id": "PN0SNTP"}]}, "id": "PJ2IX7O"}'
     headers:
       Accept:
       - application/vnd.pagerduty+json;version=2
@@ -559,20 +557,20 @@ interactions:
       content-type:
       - application/json
     method: PUT
-    uri: https://api.pagerduty.com/schedules/P54YGNT
+    uri: https://api.pagerduty.com/schedules/PJ2IX7O
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA+1VUWvbMBD+K0bPbi0nbbr5bTTN9jC2dEtXulGEKl8SMVky8rnDC/7vPSWxnY09
-        tBAYg4EfzH333em+O502rFJryGsDLNswnbOMzc/P7t5+WLCYYVOSefCIWVUXhfQNGT+WOK2xIa8K
-        zJIMa8SyypJElvq0lCvwOcGnyhVJl6FKhtBrLIyovTkgIlRIZKmUqy0+I4aVRTjecBLUBYifzgbr
-        FarkZnFJ58uhUl6XqJ0l+5saXSFRK2lMEykPEiGPHppoPv28U0LbFbHqCnzFsm+dKLPr29v0yyBK
-        wIWHJXiwCoIMvTQz53Ed3ZDDc9TZJkrmffyXKvMrv72PGdUrDZXorCid0UpDKISArhHCyKarbi/i
-        vnaI3gcoGtHJqbCcqstFTwOLvg/Ww8o9gqeGixK8Ihf6ZZmtjYm7efp0fXU5C1qg9Eg9GPFResIn
-        9C1GPEsvMj75SjDl64je4a6AR+2xlkYM1PT8JCX2xYKnGef0BWrvj7W3woBd4VpUoJzNqfYJP3vF
-        +WFPg2jDwP8rvQ3N9XRLvFahu7vx3F/SHwDfTUMT2cOd4GJ7LdxS5DJcXD7eyUZwXvudyr1S40nQ
-        aSt2cA+sEJhlaXvfxhv252kZH3Na3o349O71/2mJaaO+bEf+tgn+8rTQrIbF4DXtX1HVD4fvTLe5
-        O/wY89PGbKltWBUHD9o+0SwAUbfjjpQNQRbbxdq2T1arhbFGBwAA
+        H4sIAAAAAAAAA+1VUWvbMBD+K0bPTm0nbbL5rSzL2BhtRtN1bBShypdETJaMfOrwQv57T0lsZ2MP
+        LQTGYJCHoO++O913n84bVss1FF4DyzdMFSxn8w/D918m1yxm2FR03EfErPZlKVxDh9cVTj02FFWD
+        XtLBGrGq8yQRlTqrxApcQfCZtGXSVqiTPvUaS82900dEhBqJLKS03uAzchhRhuv1N0FVAv9pTTh9
+        izK5Xbyh+xVQS6cqVNbQ+aVHWwpUUmjdRNKBQCiihyaaT2/2SiizIpavwdUs/9aKMvt0d5d97kUJ
+        OHewBAdGQpChk2ZmHa6jWwp4jjq7Qsm8y/9SZX7lb+9jRv0KTS1awyurlVQQGiGgHQTXomm7O4h4
+        6B2ijwGKhnRzaqyg7gre0cCg65J1sLSP4GjgvAInKYT+stx4reODn67Sm6vFPGiBwiHNYJgOs0E6
+        GWSvF8NRfj7Js/FXgqleS3QW9w08KodeaN5Ts4tBFtiLNMvTlH6B2sWjd4ZrMCtc8xqkNQX1Pk7P
+        X6Xp8UyDaL3h/5XZhuE6eiVOyTDdvT0Pj/QHwHfdkCM7uBWc756FXfJChIebjvayEVx4t1e5U2o0
+        DjrtxA7hgRUSszzb3m/jDfuzW0andMvlu4vJZPrfLTFt1JftyN82wV92C3k1LAanaP/y2j8cf2fa
+        zd3ip/DPNmZLZcKqOPqgHQrNAhC1O+5E1RBEuVus2+0T+CVIJkYHAAA=
     headers:
       Access-Control-Allow-Headers:
       - Authorization, Content-Type, AuthorizationOauth, X-EARLY-ACCESS
@@ -591,13 +589,13 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '552'
+      - '554'
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Jun 2021 20:17:07 GMT
+      - Mon, 19 Jul 2021 23:47:16 GMT
       ETag:
-      - W/"d8e0ef960e9e52482b15e272d132095f"
+      - W/"75d30e8e18670048c44912492bc462fc"
       Feature-Policy:
       - accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none';
         magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
@@ -612,7 +610,7 @@ interactions:
       X-Content-Type-Options:
       - nosniff
       X-Request-Id:
-      - 93c1d9f3-53c1-4ba7-b4d7-92bc88a17ab5
+      - 871328f8-d29b-4834-9b87-fd5b63412695
       X-XSS-Protection:
       - 1; mode=block
     status:
