@@ -4,7 +4,7 @@ from typing import List, Optional
 
 import requests
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 from pdpyras import APISession, PDClientError
 
@@ -104,7 +104,7 @@ class PagerDuty:
             "Accept": "application/vnd.pagerduty+json;version=2",
         }
 
-    def get_users(self):
+    def get_users(self, teams: Optional[List[str]] = None):
         """Fetches all users
 
         :return: A list of users
@@ -113,7 +113,10 @@ class PagerDuty:
         # TODO: add support for pagination
         session = APISession(self.token)
         try:
-            users = list(session.iter_all("users", params={"include[]": "teams"}))
+            params = {"include[]": "teams"}
+            if teams:
+                params["team_ids[]"] = ",".join(teams)
+            users = list(session.iter_all("users", params=params))
         except PDClientError as e:
             raise _create_scheduling_exception(e.response) from e
         return users
