@@ -3,7 +3,12 @@ from typing import Optional, List
 import pytest
 import responses
 
-from pdscheduling import PagerDuty, PDSchedulingNetworkException
+from pdscheduling import (
+    PagerDuty,
+    PDSchedulingNetworkException,
+    _calculate_consecutive_hours,
+    _generate_schedule_data,
+)
 
 
 @responses.activate
@@ -28,7 +33,9 @@ def test_incorrect_token():
         status=401,
     )
     client = PagerDuty("123")
-    with pytest.raises(PDSchedulingNetworkException, match="PagerDuty request failed: Unauthorized") as exc:
+    with pytest.raises(
+        PDSchedulingNetworkException, match="PagerDuty request failed: Unauthorized"
+    ) as exc:
         client.get_users()
     assert exc.value.status_code == 401
     assert exc.value.reason == "Unauthorized"
@@ -72,3 +79,75 @@ def test_update_schedule():
         name="OptDuty",
         hours=hours,
     )
+
+
+def test_calculate_consecutive_hours():
+    assert _calculate_consecutive_hours(["a"]) == 1
+    assert _calculate_consecutive_hours(["a", "b"]) == 1
+    assert _calculate_consecutive_hours(["a", "a", "b", "a"]) == 2
+
+
+def test_generate_schedule_data():
+    # test consecutive_hours
+    result = _generate_schedule_data("a", ["u"] * (7 * 24), [], "s_id")
+    assert result == {
+        "schedule": {
+            "name": "a",
+            "type": "schedule",
+            "time_zone": "UTC",
+            "description": "Automatically created by PDScheduling",
+            "schedule_layers": [
+                {
+                    "start": "2015-11-06T20:00:00-05:00",
+                    "users": [{"user": {"id": "u", "type": "user"}}],
+                    "rotation_turn_length_seconds": 604800,
+                    "rotation_virtual_start": "2015-11-06T20:00:00-05:00",
+                    "restrictions": [
+                        {
+                            "type": "weekly_restriction",
+                            "start_day_of_week": 1,
+                            "start_time_of_day": "00:00:00",
+                            "duration_seconds": 86400,
+                        },
+                        {
+                            "type": "weekly_restriction",
+                            "start_day_of_week": 2,
+                            "start_time_of_day": "00:00:00",
+                            "duration_seconds": 86400,
+                        },
+                        {
+                            "type": "weekly_restriction",
+                            "start_day_of_week": 3,
+                            "start_time_of_day": "00:00:00",
+                            "duration_seconds": 86400,
+                        },
+                        {
+                            "type": "weekly_restriction",
+                            "start_day_of_week": 4,
+                            "start_time_of_day": "00:00:00",
+                            "duration_seconds": 86400,
+                        },
+                        {
+                            "type": "weekly_restriction",
+                            "start_day_of_week": 5,
+                            "start_time_of_day": "00:00:00",
+                            "duration_seconds": 86400,
+                        },
+                        {
+                            "type": "weekly_restriction",
+                            "start_day_of_week": 6,
+                            "start_time_of_day": "00:00:00",
+                            "duration_seconds": 86400,
+                        },
+                        {
+                            "type": "weekly_restriction",
+                            "start_day_of_week": 7,
+                            "start_time_of_day": "00:00:00",
+                            "duration_seconds": 86400,
+                        },
+                    ],
+                }
+            ],
+        },
+        "id": "s_id",
+    }

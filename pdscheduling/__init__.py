@@ -4,7 +4,7 @@ from typing import List, Optional
 
 import requests
 
-__version__ = "0.2.1"
+__version__ = "0.2.2"
 
 from pdpyras import APISession, PDClientError
 
@@ -25,6 +25,20 @@ class PDSchedulingNetworkException(PDSchedulingException):
         super().__init__(message)
 
 
+def _calculate_consecutive_hours(hours: List[str]) -> int:
+    consecutive_hours = 0
+
+    target_user = hours[0]
+    for user in hours:
+        if consecutive_hours > 23:
+            break
+        elif user == target_user:
+            consecutive_hours += 1
+        else:
+            break
+    return consecutive_hours
+
+
 def _generate_schedule_data(name, hours, layers_ids, schedule_id):
     assert len(hours) == 7 * 24
     all_users = list(set([id for id in hours if id]))
@@ -34,13 +48,22 @@ def _generate_schedule_data(name, hours, layers_ids, schedule_id):
         restrictions = []
         for day in range(7):
             for hour in range(24):
-                if hours[day * 24 + hour] == user:
+                hours_idx = day * 24 + hour
+                if hours[hours_idx] == user and (
+                    hours_idx == 0 or hours[hours_idx - 1] != user
+                ):
+                    consecutive_hours = _calculate_consecutive_hours(hours[hours_idx:])
+
+                    # hacky way break sequence and limit maximum duration to 24 hours
+                    # this is some PD limit
+                    hours[hours_idx + consecutive_hours - 1] = None
+
                     restrictions.append(
                         {
                             "type": "weekly_restriction",
                             "start_day_of_week": day + 1,
                             "start_time_of_day": f"{hour:02d}:00:00",
-                            "duration_seconds": 3600,
+                            "duration_seconds": consecutive_hours * 3600,
                         }
                     )
 
@@ -194,6 +217,7 @@ class PagerDuty:
 
         data = _generate_schedule_data(name, hours, layers_ids, schedule_id)
 
+        result = None
         try:
             result = requests.put(
                 url=f"https://api.pagerduty.com/schedules/{schedule_id}",
@@ -202,7 +226,7 @@ class PagerDuty:
             )
             result.raise_for_status()
         except requests.RequestException as e:
-            raise PDSchedulingNetworkException from e
+            raise _create_scheduling_exception(result) from e
         return result
 
     def create_or_update_schedule(self, *, name: str, hours: List[Optional[str]]):
