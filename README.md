@@ -28,7 +28,10 @@ pd.create_or_update_schedule(name="Automatic Schedule", hours=schedule)
 You can, but it will be harder. PagerDuty don't give straightforward API for this, instead you need to create schedule
 with a layer for every developer with proper restriction.
 
-## OptDuty
+## Users of the library
 
-The library extracted from https://optduty.com. If you need a help with library or to create scheduling system please
-reach out roman@optduty.com
+The library is used by [https://optduty.com](https://optduty.com). A SaaS to schedule On-Call in a smart way.
+
+## Consultancy
+
+[DisOpt consultancy](https://disopt.com/) could help you to use this library.
