@@ -34,4 +34,4 @@ The library is used by [https://optduty.com](https://optduty.com). A SaaS to sch
 
 ## Consultancy
 
-[DisOpt consultancy](https://disopt.com/) could help you to use this library.
+[DisOpt consultancy](https://disopt.com/) could help you use the library.
