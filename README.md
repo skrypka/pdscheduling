@@ -1,5 +1,8 @@
 # PDScheduling - a library to create schedules in PagerDuty
 
+[![CI](https://github.com/skrypka/pdscheduling/workflows/CI/badge.svg?branch=master)](https://github.com/skrypka/pdscheduling/actions)
+[![PyPI](https://img.shields.io/pypi/v/pdscheduling)](https://pypi.org/project/pdscheduling/)
+
 Just generate an array with a user for every hour for the next week - and the library will push it to PagerDuty.
 
 Install: `pip install pdscheduling`
